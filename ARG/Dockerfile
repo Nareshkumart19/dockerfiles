@@ -1,4 +1,5 @@
-FROM almalinux
+ARG version
+FROM almalinux:${version:-9}
 ENV course="aws" \
     duration="120hrs"
 ARG trainer="sivakumar"
