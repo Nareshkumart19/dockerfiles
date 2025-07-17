@@ -1,7 +1,7 @@
 FROM almalinux:9
 #CMD  ["ping","google.com"]
-ADD dnf insatll git -y  
-ADD useradd naresh
+RUN dnf insatll git -y  
+RUN useradd naresh
 
 USER naresh
 CMD  ["google.com"]
